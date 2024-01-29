@@ -1,0 +1,186 @@
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the content */
+    background: radial-gradient(#fffbfe, #fef6fd, #fbdcf5, #f9cff2, #f7beed);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+}
+
+h1{
+    position: static;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+}
+
+h2{
+    position: static;
+    font-family: "Inter", sans-serif;
+}
+
+#Choco {
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    animation: aniChoco;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+#Moby {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    animation: aniMoby;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+#slide {
+    position: relative;
+    left: 100px;
+    top: 125px;
+}
+
+.pop-out-container {
+    overflow: hidden;
+    text-align: center;
+}
+
+.pop-out-container2 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.pop-out-container3 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.pop-out-text {
+    font-size: 80px;
+    margin-top: 75px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+} 
+
+.pop-out-text2 {
+    font-size: 50px;
+    margin-top:0px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pop-out-text3 {
+    font-size: 10px;
+    margin-top:0px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pop-out-container.active .pop-out-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pop-out-container2.active .pop-out-text2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pop-out-container3.active .pop-out-text3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slidecontainer {
+    float: left;
+    width: 25%;
+    height: 280px;
+}
+
+.h2Slide {
+    position: relative;
+    left: 103px;
+    top: 125px;
+    font-size: 10px;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.firecontainer {
+    float: left;
+    width: 50%;
+    height: 280px;
+}
+
+#fireworks {
+    position: relative;
+    height: 280px;
+    left: 160px;
+    opacity: 0%;
+    transition: opacity 0.5s;
+}
+
+.secretcontainer {
+    float: right;
+    width: 25%;
+    height: 280px;
+}
+
+.secret {
+    position: relative;
+    left: 85px;
+    top: 110px;
+    width: 150px;
+    font-size: 15px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes aniChoco{
+    from{margin-left: 100%;}
+	to{margin-left: 0%;}
+}
+
+@keyframes aniMoby{
+    from{margin-right: 100%;}
+	to{margin-right: 0%;}
+}
+
+@media (max-width: 600px) {
+    .pop-out-text {
+        font-size: 40px; 
+    }
+
+    .pop-out-text2 {
+        font-size: 20px; 
+    }
+
+    .pop-out-text3 {
+        font-size: 20px; 
+    }
+}
