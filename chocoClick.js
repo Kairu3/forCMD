@@ -11,6 +11,8 @@ var audio = document.getElementById("bgAudio");
                 const start = () => {
                 setTimeout(function() {
                     confetti.start()
+                    document.getElementById('fireworks').src = '/forCMD/ChiCat.png';
+                    document.getElementById('fireworks').style.left = '210px';
                 }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
             };
 
@@ -24,7 +26,7 @@ var audio = document.getElementById("bgAudio");
             // after this here we are calling both the function so it works
             start();
             stop();
-            popOutTextElement.textContent = "i lied, my gift last year was not JUST an appreciation gift haha";
+            popOutTextElement.textContent = "i lied, my gift last year was not just an appreciation gift haha";
 
             } else {
                 audio.pause(); // If playing, pause the audio
