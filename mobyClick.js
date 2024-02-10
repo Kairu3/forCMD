@@ -41,7 +41,7 @@ function startAnimation() {
     }
     animationStarted = true;
     popOutTextElement.textContent = "i lied, my gift last year was not JUST an appreciation gift haha";
-    document.getElementById('fireworks').src = '/assets/ChiCat.png';
+    document.getElementById('fireworks').src = '/forCMD/ChiCat.png';
     document.getElementById('fireworks').style.left = '210px';
     audio.play();
   }
