@@ -198,7 +198,7 @@ h2{
     height: 50px;
     background-color: transparent;
     border: none;
-    background-image: url('/assets/bubble.png');
+    background-image: url('bubble.png');
     background-size: cover;
     animation: fall ease-in 15s forwards;
 }
