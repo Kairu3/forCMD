@@ -198,7 +198,7 @@ h2{
     height: 50px;
     background-color: transparent;
     border: none;
-    background-image: url('bubble.png');
+    background-image: url('/forCMD/bubble.png');
     background-size: cover;
     animation: fall ease-in 15s forwards;
 }
