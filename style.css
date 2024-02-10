@@ -184,3 +184,31 @@ h2{
         font-size: 20px; 
     }
 }
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+.flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    background-image: url('/assets/bubble.png');
+    background-size: cover;
+    animation: fall ease-in 15s forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) scale(1.0);
+    }
+
+    100% {
+        transform: translateY(100vh) scale(1.4);
+    }
+}
