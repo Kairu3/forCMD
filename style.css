@@ -173,7 +173,8 @@ h2{
 
 @media (max-width: 600px) {
     .pop-out-text {
-        font-size: 40px; 
+        font-size: 40px;
+        margin-top: 125px;
     }
 
     .pop-out-text2 {
@@ -182,6 +183,52 @@ h2{
 
     .pop-out-text3 {
         font-size: 20px; 
+    }
+
+    .slidecontainer {
+        float: left;
+        width: 50%;
+        height: 280px;
+    }
+    
+    .h2Slide {
+        position: relative;
+        left: 50px;
+        top: 125px;
+        font-size: 10px;
+    }
+
+    #slide {
+        position: relative;
+        left: 60px;
+        top: 125px;
+    }
+
+    .firecontainer {
+        float: left;
+        width: 50%;
+        height: 280px;
+    }
+    
+    #fireworks {
+        position: relative;
+        height: 165px;
+        left: 15px;
+        top: 45px;
+        opacity: 0%;
+        transition: opacity 0.5s;
+    }
+
+    .secretcontainer {
+        width: 100%;
+    }
+    
+    .secret {
+        position: relative;
+        width: 500px;
+        top: -45px;
+        left: 50px;
+        font-size: 15px;
     }
 }
 

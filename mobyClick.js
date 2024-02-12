@@ -4,6 +4,8 @@ const NUM_BUBBLES = 100;
 // Variable to keep track of whether the animation has started
 let animationStarted = false;
 
+var w = window.innerWidth;
+
 // Function to create a bubble
 function createBubble() {
   const bubble = document.createElement('div');
@@ -41,8 +43,15 @@ function startAnimation() {
     }
     animationStarted = true;
     popOutTextElement.textContent = "i lied, my gift last year was not JUST an appreciation gift haha";
-    document.getElementById('fireworks').src = '/forCMD/ChiCat.png';
-    document.getElementById('fireworks').style.left = '210px';
+    if (w > 728){
+      document.getElementById('fireworks').src = '/assets/ChiCat.png';
+      document.getElementById('fireworks').style.left = '210px';
+    }else{
+      document.getElementById('fireworks').src = '/assets/ChiCat.png';
+      document.getElementById('fireworks').style.height = '200px';
+      document.getElementById('fireworks').style.top = '5px';
+      document.getElementById('secretText').style.fontSize = '10px';
+    }
     audio.play();
   }
 }
