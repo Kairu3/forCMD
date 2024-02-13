@@ -20,3 +20,19 @@ slider.addEventListener("input", function() {
         }
     }
 });
+
+// For mobile devices, handle the audio play event with a user gesture, such as touch
+document.addEventListener('touchstart', function() {
+    if (!fwAudio.paused) {
+        // Audio already playing, no need to do anything
+        return;
+    }
+    
+    // Check if the slider is at 100% and if the fireworks are not already triggered
+    if (slider.value == 100 && !fireworksTriggered) {
+        fwAudio.play(); // Play the audio
+        fireworksTriggered = true;
+        secretText.removeAttribute("hidden");
+        secretText.classList.add("fade-in");
+    }
+});
