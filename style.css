@@ -187,33 +187,34 @@ h2{
 
     .slidecontainer {
         float: left;
-        width: 50%;
+        width: 40%;
         height: 280px;
     }
     
     .h2Slide {
         position: relative;
-        left: 50px;
+        left: 20px;
         top: 125px;
         font-size: 10px;
+        width: 105px;
     }
 
     #slide {
         position: relative;
-        left: 60px;
+        left: 15px;
         top: 125px;
     }
 
     .firecontainer {
         float: left;
-        width: 50%;
+        width: 60%;
         height: 280px;
     }
     
     #fireworks {
         position: relative;
-        height: 165px;
-        left: 15px;
+        height: 145px;
+        left: 5px;
         top: 45px;
         opacity: 0%;
         transition: opacity 0.5s;
@@ -225,9 +226,9 @@ h2{
     
     .secret {
         position: relative;
-        width: 500px;
+        width: 350px;
         top: -45px;
-        left: 50px;
+        left: 35px;
         font-size: 15px;
     }
 }
