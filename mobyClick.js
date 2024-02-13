@@ -42,7 +42,7 @@ function startAnimation() {
       createBubble();
     }
     animationStarted = true;
-    popOutTextElement.textContent = "i lied, my gift last year was not JUST an appreciation gift haha";
+    popOutTextElement.textContent = "i lied, my gift last year was not just an appreciation gift haha";
     if (w > 728){
       document.getElementById('fireworks').src = '/forCMD/ChiCat.png';
       document.getElementById('fireworks').style.left = '210px';
